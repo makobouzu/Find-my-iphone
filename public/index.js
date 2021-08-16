@@ -12,7 +12,6 @@ var map = new mapboxgl.Map({
     zoom: zoom
 });
 
-// Database reflect
 map.on('load', () => { 
     axios.get('/sheet')
     .then(response => {

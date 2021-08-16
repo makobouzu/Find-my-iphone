@@ -46,3 +46,6 @@ cd find-my-iphone
 npm run devStart
 ```
 
+## REFERENCE
+* [find-my-iphone](https://www.npmjs.com/package/find-my-iphone)
+* [google-spreadsheet](https://www.npmjs.com/package/google-spreadsheet)
