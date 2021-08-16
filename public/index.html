@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Find my iphone</title>
+  <meta name="description" content="Find my iphone">
+  <link rel="icon" href="img/favicon.ico">
+
+  <meta property="og:title" content="Find my iphone">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Using 'Find my iphone', record iphone's location history in spreadsheet.">
+  <meta property="og:site_name" content="Find my iphone">
   
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js' defer></script>
@@ -15,19 +23,19 @@
   <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
   
   <style>
-      body { margin: 0; padding: 0; font-family: Helvetica}
-      #map { position: absolute; top: 0; bottom: 0; width: 100%;}
-      #contents { position: fixed; z-index: 1; top: 10px; left: 10px; border: 1.5px solid rgba(0,0,0,0.1); border-radius: 7px;}
-      #trigger { padding: .7rem .75rem; }
-      #apple { color: black;}
+    body { margin: 0; padding: 0; font-family: Helvetica; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #contents { position: fixed; z-index: 1; top: 10px; left: 10px; border: 1.5px solid rgba(0,0,0,0.1); border-radius: 7px; }
+    #trigger { padding: .7rem .75rem; }
+    #apple { color: black;}
   </style>
 </head>
 
 <body>
-    <div id='map'></div>
+  <div id='map'></div>
 
-    <div id='contents'>
-      <button type="button" id="trigger"><i class="fab fa-apple" id="apple"></i></button>
+  <div id='contents'>
+    <button type="button" id="trigger"><i class="fab fa-apple" id="apple"></i></button>
   </div>
 </body>
 </html>

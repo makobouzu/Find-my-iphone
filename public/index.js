@@ -1,7 +1,7 @@
 window.addEventListener('load', (event) => {
 });
 
-mapboxgl.accessToken = '*******************************************';
+mapboxgl.accessToken = '*****************************************************';
 var center = [139.5798591, 35.703521];
 var zoom = 7;
 
