@@ -1,7 +1,19 @@
 window.addEventListener('load', (event) => {
+    axios.get('/icloud')
+    .then(response => {
+        console.log(response);
+        map.flyTo({
+            center: [response.data[2], response.data[1]],
+            essential: true,
+            zoom: 9
+        });
+    })
+    .catch(err => {
+        console.log(err);
+    });
 });
 
-mapboxgl.accessToken = '*****************************************************';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFrb2JvdXp1IiwiYSI6ImNrYWF5and0MzFhYnMyc214ZGo3OWd3cHQifQ.pPCfwEss5pJhm4Yu7kvj1w';
 var center = [139.5798591, 35.703521];
 var zoom = 7;
 

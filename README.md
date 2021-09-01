@@ -3,6 +3,8 @@ Link icloud, spreadsheet, and mapbox, and record iphone's location information &
 
 <img src="https://img.shields.io/badge/Chrome-Passing-gre.svg?logo=Google%20Chrome&amp;style=plastic">
 
+![sample](img/sample.png "sample.png")
+
 ## PREPARE
 ```
 git clone git@github.com:makobouzu/Find-my-iphone.git

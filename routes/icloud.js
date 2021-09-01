@@ -19,6 +19,7 @@ router.get('/', async(req, res) => {
                 }
             });
             if (device) {
+                console.log(device)
                 array.push(device.deviceDisplayName);
                 array.push(device.location.latitude);
                 array.push(device.location.longitude);
